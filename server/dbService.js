@@ -16,7 +16,7 @@ connection.connect((err) => {
     if(err){
         console.log(err.message);
     }
-   // console.log('db '+connection.state)
+    console.log('db '+connection.state)
 });
 
 class DbService {
@@ -34,10 +34,10 @@ class DbService {
                 })
 
             })
-            console.log(response)
+            //console.log(response)
             return response;
         }catch(error){
-            console.log(error)
+            console.log(error);
 
         }
     }
@@ -52,8 +52,11 @@ class DbService {
                 })
 
             });
-            console.log(insertId);
-           // return response;
+            return {
+                id: insertId,
+                name: name,
+                dateAdded: dateAdded
+            };
         }catch(error){
             console.log(error);
         }
