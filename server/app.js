@@ -18,7 +18,7 @@ app.post('/insert', (request,response) => {
     const db = dbService.getDbServiceInstance();
     const result = db.insertNewName(name);
 
-    result.then(data => response.json({success: true}))
+    result.then(data => response.json({data: data}))
     .catch(err => console.log(err));
 
 
