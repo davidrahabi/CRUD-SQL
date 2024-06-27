@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Crud SQL Web App</title>
+    <title>web app</title>
 </head>
 <body>
     <main>
@@ -14,9 +15,8 @@
 
         <br><br><br>
         <div>
-            <input placeholder="search by name"
-            id="search-input">
-            <button id="search-btn">Search</button>
+           <input placeholder="search by name" id="search-input">
+           <button id="search-btn">Search</button>
         </div>
 
         <table id="table">
@@ -29,7 +29,13 @@
             </thead>
             <tbody></tbody>
         </table>
+
+        <section hidden id="update-row">
+            <label>Name:</label>
+            <input type="text" id="update-name-input">
+            <button id="update-row-btn">Update</button>
+        </section>
     </main>
-    <script src="index.js"> </script>
+    <script src="index.js"></script>
 </body>
 </html>
