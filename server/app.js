@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended : false}));
 
 
-//create
+//create-
 app.post('/insert', (request,response) => {
     const { name } = request.body;
     const db = dbService.getDbServiceInstance();
